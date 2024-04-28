@@ -12,24 +12,6 @@ document.getElementById('mod').textContent = `Last Modified: ${currentDate}`;
 //const date = new Date(file.mod);
 
 
-/*function getWeather(Blackstone, Massachusetts) {
-    var url = 'http://api.openweathermap.org/data/2.5/weather';
-    $.ajax({
-      dataType: "jsonp",
-      url: url,
-      jsonCallback: 'jsonp',
-      data: { q: city },
-      cache: false,
-      success: function (data) {
-        callback(data.main.temp);
-      }
-    });
-  }
-
-const popcorn = getWeather()
-
-document.getElementById('weather').textContent = `Weather: ${popcorn}`;*/
-
 $(document).ready(function() {
 
 	var getIP = 'http://ip-api.com/json/',
