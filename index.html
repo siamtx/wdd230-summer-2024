@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Tim Howell - WDD 230- Web Frontend Development"</title>
@@ -12,11 +13,11 @@
 </head>
 <body>
     <header>
-        <img src="/images/Tim-Howell.jpg" alt="Tim Howell">
+        <img id= "pic" src="/images/Tim-Howell.jpg" alt="Tim Howell">
         <h1>Tim Howell</h1>
     </header>
     <nav>
-        <ul>
+        <ul class="one">
             <li>
                 <a href=index.html>Home</a>
             </li>
@@ -32,8 +33,7 @@
             <li>
                 <a href=https://www.churchofjesuschrist.org/study/scriptures>Scipture</a>
             </li>
-        </ul>
-        
+        </ul>        
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
@@ -69,16 +69,17 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="news">
             <h3>Information</h3>
-            <p>"Location"</p>
-            <p>"Weather"</p>
-            <p>"vistors: "</p>
+            <p1>"Massachusetts, United States"</p>
+            <p2>"Weather"</p>
+            <p3>"vistors: "</p>
         </section>
     </main>
-    <footer>
-        <p> &copy; 2024 - Tim Howell United States <img src="/images/Flag.png" alt="United States Flag"></p>
-        <p>lastModified</p>
+    <footer class="bottom">
+        <p id="copy"> &copy; 2024 - Tim Howell United States </p>
+        <img id="stripes" src="/images/Flag.png" alt="United States Flag">
+        <p id="mod">lastModified</p>
     </footer>
 </body>
 </html>
