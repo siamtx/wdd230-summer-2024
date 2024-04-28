@@ -7,7 +7,7 @@
 body{
     display: grid;
     align-items: center;
-    grid-template-columns: 15em 1fr 15em;
+    grid-template-columns: 35em 1fr 35em;
     grid-template-rows: auto auto auto auto auto;
     
 }
