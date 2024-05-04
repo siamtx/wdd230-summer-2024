@@ -1,0 +1,27 @@
+body{
+    font: Roboto;
+}
+header{
+    max-width: 640px;
+    text-align: center;
+    margin: 1rem auto;
+    border: 5px;
+    padding: 2em;
+    background-color: aquamarine;
+}
+main{
+    max-width: 640px;
+    text-align: center;
+    margin: 1rem auto;
+    border: 5px;
+    padding: 2em;
+    background-color: aquamarine;
+}
+footer{
+    max-width: 640px;
+    text-align: center;
+    margin: 1rem auto;
+    border: 5px;
+    padding: 2em;
+    background-color: aquamarine;
+}
