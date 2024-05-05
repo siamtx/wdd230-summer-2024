@@ -18,8 +18,9 @@ main{
     max-width: 640px;
     text-align: center;
     margin: 1rem auto;
-    border: 5px;
-    padding: 2em;
+    border: 45px;
+    border-color: black;
+    padding: 25px;
     background-color: aquamarine;
 }
 footer{
