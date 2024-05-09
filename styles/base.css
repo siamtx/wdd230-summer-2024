@@ -5,10 +5,10 @@
 
 
 body{
-    display: grid;
+    /*display: grid;*/
     align-items: center;
-    grid-template-columns: 25em 1fr 25em;
-    grid-template-rows: auto auto auto auto auto;
+  /*  grid-template-columns: 25em 1fr 25em;
+    grid-template-rows: auto auto auto auto auto;*/
     
 }
 
@@ -26,8 +26,6 @@ header{
 }
 
 h1{    
-    grid-column: 3/3;
-    grid-row: 1/1;
     text-align: center;
     font-size: 45px;
 }
@@ -37,23 +35,43 @@ ul{
 }
 
 nav{  
+    display: flex;
+    list-style-type: none;
+    grid-column: 2/3;
     text-align: center;
+    grid-row: 2/3;
+    padding: 1rem;
     background-color: #48e5c2;
     text-decoration-color: black;
     font-size: 25px;
-    grid-column: 2/3;
-    grid-row: 2/3;   
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 h2{
-    grid-column: 2/3;
-    grid-row: 3/4;
+
     text-align: center;
 }
 
 main{
-    grid-column: 2/3;
-    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
 }
 
 ol{
@@ -62,21 +80,18 @@ ol{
 
 h3{
     background-color: #72705b;
-    grid-column: 2/3;
-    grid-row: 2/3;
+
     text-align: center;
 }
 
 #news{
-    grid-column: 2/3;
-    grid-row: 2/3;
     text-align: center;
 }
 
 footer{
-    /*background-color: #72705b; */
+    /*background-color: #72705b;
     grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 4/5;*/
     background-color: #48e5c2
 }
 
