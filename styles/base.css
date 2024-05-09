@@ -85,17 +85,16 @@ footer{
     font-size: 25px;
 }
 
-#copy{
+.bottom{
     text-align: center;
 }
 
+
 #stripes{
-    padding-left: 290px;
     height: 45px;
     border: 3px;
 }
 
 #mod{
-    text-align: center;
     padding-bottom: 1.5em;
 }

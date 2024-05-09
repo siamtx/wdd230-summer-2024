@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    background-color: aqua;
+    text-align: center;
+    
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 2em;
+    text-decoration-color: chocolate;
+    text-decoration-style: bold;
+}
+h2{
+    font-size: 1.5em;
+}
+
+p{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.site{
+    text-align: center;
+    padding: 10px 20px;
+}
+#furniture{
+    height: 550px;
+}
+
+#legs{
+    height: 550px;
+}
+
+#magic{
+    height: 550px;
+}
+
+
+.bottom{
+    text-align: center;
+
+}
+
+#stripes{
+    height: 45px;    
+}
