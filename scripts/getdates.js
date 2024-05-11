@@ -12,7 +12,7 @@ document.getElementById('mod').textContent = `Last Modified: ${currentDate}`;
 //const date = new Date(file.mod);
 
 
-(document).ready(function() {
+document.ready(function() {
 
 	var getIP = 'http://ip-api.com/json/',
 		openWeatherMap = 'http://api.openweathermap.org/data/2.5/weather',
