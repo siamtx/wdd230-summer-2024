@@ -12,15 +12,15 @@ document.getElementById('mod').textContent = `Last Modified: ${currentDate}`;
 //const date = new Date(file.mod);
 
 
-$(document).ready(function() {
+(document).ready(function() {
 
 	var getIP = 'http://ip-api.com/json/',
 		openWeatherMap = 'http://api.openweathermap.org/data/2.5/weather',
 		APPID = 'APPID';
 
-	$.getJSON(getIP).done(function(location) {
+	getJSON(getIP).done(function(location) {
 
-	$.getJSON(openWeatherMap, {
+	getJSON(openWeatherMap, {
 			lat: location.lat,
 			lon: location.lon,
 			APPID: APPID
@@ -30,14 +30,14 @@ $(document).ready(function() {
 			var celsius = weather.main.temp - 273.15;
 			var fahrenheit = celsius * 1.8 + 32;
 
-			$('.currentLocation').text('Hello! Your current location is ' + location.city + ', ' + location.region + ', ' + location.country);
+			('.currentLocation').text('Hello! Your current location is ' + location.city + ', ' + location.region + ', ' + location.country);
 
-			$('.btn-celsius').on('click', function() {
-				$('.currentTemperature').text('The current temperature in ' + location.city + ' is ' + celsius.toFixed(0) + ' degrees Celsius.');
+			('.btn-celsius').on('click', function() {
+				('.currentTemperature').text('The current temperature in ' + location.city + ' is ' + celsius.toFixed(0) + ' degrees Celsius.');
 			});
 
-			$('.btn-fahrenheit').on('click', function() {
-				$('.currentTemperature').text('The current temperature in ' + location.city + ' is ' + fahrenheit.toFixed(0) + ' degrees Fahrenheit.');
+			('.btn-fahrenheit').on('click', function() {
+				('.currentTemperature').text('The current temperature in ' + location.city + ' is ' + fahrenheit.toFixed(0) + ' degrees Fahrenheit.');
 			});
 		});
 	});
