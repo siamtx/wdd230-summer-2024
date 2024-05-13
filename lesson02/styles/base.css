@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://coolors.co/2191fb-72705b-48e5c2-03191e-8cdedc');
+
+:root {
+    --primary-color: #2191fb;
+    --secondary-color:#72705b;
+    --accent1-color: #48e5c2;
+    --accent2-color: #03191e;
+    --accent3-color: #8cdedc;
+ 
+    --heading-font: "roboto", sans-serif;
+    --paragraph-font: "source sans 3", sans-serif;
+}
+
+
+
 body{
     display: grid;
     background-color: aqua;
     text-align: center;
-    
 }
 
 h1{
@@ -10,18 +25,22 @@ h1{
     font-size: 2em;
     text-decoration-color: chocolate;
     text-decoration-style: bold;
+    text-align: center;
 }
 h2{
     font-size: 1.5em;
+    text-align: center;
 }
 
 p{
-    margin-left: 350px;
-    margin-right: 350px;
+    grid-template-columns: 2/3;
+    /*margin-left: 350px;
+    margin-right: 350px;*/
 }
 
 ul{
     list-style-type: none;
+    align-items: center;
 }
 
 .site{
