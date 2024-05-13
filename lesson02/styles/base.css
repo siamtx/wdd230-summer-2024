@@ -25,7 +25,7 @@ h1{
     font-family: sans-serif;
     font-size: 2em;
     text-decoration-color: chocolate;
-    text-decoration-style: bold;
+    text-decoration-style: solid;
     text-align: center;
 }
 h2{
@@ -34,9 +34,8 @@ h2{
 }
 
 p{
-    grid-template-columns: 2/3;
-    /*margin-left: 350px;
-    margin-right: 350px;*/
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 ul{
