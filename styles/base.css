@@ -83,8 +83,12 @@ h3{
     text-align: center;
 }
 
-#news{
+.news{
     text-align: center;;
+}
+iframe{
+    height: 150px;
+    width: 150px;
 }
 
 footer{
