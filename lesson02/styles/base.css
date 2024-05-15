@@ -17,25 +17,24 @@
 
 body{
     display: grid;
-    background-color: aqua;
-    text-align: center;
+    background-color:#8cdedc;
 }
 
 h1{
-    font-family: sans-serif;
-    font-size: 2em;
-    text-decoration-color: chocolate;
+    text-align: right;
+    font-family: Roboto 400, sans-serif 400;
+    font-size: 4em;
+    text-decoration-color: #03191e;
     text-decoration-style: solid;
-    text-align: center;
 }
 h2{
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
 }
 
 p{
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 ul{
@@ -43,22 +42,37 @@ ul{
     align-items: center;
 }
 
+.card1{
+
+    align-content: center;
+}
+
+.card2{
+    align-content: center;
+}
+
+.card3{
+    align-content: center;
+}
+
 .site{
     text-align: center;
     padding: 10px 20px;
-    /*grid-template-columns: 1/2;
-    grid-template-rows: 1/2;*/
 }
+
 #furniture{
     height: 550px;
+    border-radius: 25px;
 }
 
 #legs{
     height: 550px;
+    border-radius: 25px;
 }
 
 #magic{
     height: 550px;
+    border-radius: 25px;
 }
 
 
