@@ -1,0 +1,100 @@
+
+/* Hamburger Menu */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+ 
+#menu::before {
+    content: "☰";
+    color: var(--accent3-color);
+}
+ 
+#menu.open::before {
+    content: "X";
+    color: var(--accent3-color);
+}
+ 
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+ 
+.navigation ul {
+    list-style: none;
+}
+ 
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: larger;
+    color: var(--primary-color);
+}
+ 
+.navigation a:hover {
+    font-weight: 700;
+}
+ 
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+ 
+/* wayfinding symbol for the user */
+.navigation .active {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 1.5px;
+}
+[7:26 PM] Chlarson, Elizabeth
+    /* Remove Hamburger */
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+ 
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+ 
+    nav {
+        background-color: var(--secondary-color);
+    }
+   
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+   
+    nav a{
+        padding: 0.5rem;
+        display: block;
+        text-align: center;
+    }
+   
+    nav a, nav a:visited, nav a:hover, nav a:focus, nav a:active {
+        font-family: var(--heading-font);
+        font-size: larger;
+        color: var(--primary-color);
+    }
+}
+[7:30 PM] Chlarson, Elizabeth
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+ 
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
+[10:29 PM] Johnson, Yvette
+<button id="menu"></button>
+    <nav class="navigation">

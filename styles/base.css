@@ -5,13 +5,16 @@
   */
 
 body{
-    align-items: center; 
+    align-items: center;
 }
 
 header{
+    display: flex;
+    justify-content: space-evenly;
     background-color: #2191fb;
-    grid-column: 2/3;
-    grid-row: 1/2;
+    unicode-bidi: isolate;
+    /*grid-column: 2/3;
+    grid-row: 1/2;*/
 }
 
 #pic{
