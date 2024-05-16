@@ -21,3 +21,18 @@ base.css
 *,*:before,*:after {
     box-sizing: border-box;
 }
+body{
+    display: grid;
+}
+
+h1{
+    text-align: center;
+    font-family: Roboto 400, sans-serif 400;
+}
+
+footer{
+    text-align: center;
+}
+img{
+    height: 45px;
+}
