@@ -25,9 +25,17 @@ body{
     display: grid;
 }
 
-h1{
+h1, h2, h3{
     text-align: center;
     font-family: Roboto 400, sans-serif 400;
+}
+
+p{
+    text-align: center;
+}
+
+main{
+    text-align: center;
 }
 
 footer{
