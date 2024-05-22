@@ -17,14 +17,35 @@
 </head>
 <body>
     <header>
-        <h1>Gwinnett County Cahmber of Commerce</h1>
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discovery.html">Look Around</a></li>
-            <li><a href="directory.html">Business Members</a></li>
-            <li><a href="join.html">Become a Member</a></li>
-        </nav>
+        <h1>Gwinnett County Chamber of Commerce</h1>
     </header>
-    
+    <main>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="discovery.html">Discover Business</a>
+            <a href="directory.html">Business Members</a>
+            <a href="join.html">Become a Member</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <button>
+            <span id="opclk" onclick="openNav()">MENU</span>
+          </button>                  
+        
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main">
+            ...
+          </div>
+        <img id="hero" src="images/heroATLbizj.jpg" alt="Futuristic Gwinnett">  
+        <h2 id="cta">Welcome to the Home of Business Innovation</h2>
+        <h3 id="currents" >Current Events</h3>
+    </main>
+    <footer>
+        <p id="copy">&copy; <span id="currentYear"></span> - Tim Howell United States </p>
+        <img src="images/Flag.png" alt="US Flag">
+    </footer>
+    <script src="scripts/side-nav.js"></script>
 </body>
 </html>
