@@ -70,6 +70,9 @@ button{
     grid-row: 2/3;
 }
 
+#mod{
+    padding-bottom: 1.5em;
+}
 
 /* The side navigation menu */
 .sidenav {
