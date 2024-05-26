@@ -50,7 +50,6 @@ img{
     height: 400px;
     width: 1000px;
     image-rendering: auto;
-    border-image: 3px;
     border-color: var(--accent2-color);
 }
 button{
@@ -68,6 +67,13 @@ button{
     padding-left: 10px;
     grid-column: 1/2;
     grid-row: 2/3;
+}
+#spots{
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+    border-color: var(--secondary-color);
+    box-sizing: border-box;
+    border-width: 5px;
 }
 
 #mod{
