@@ -46,7 +46,14 @@ footer{
 img{
     height: 45px;
 }
+
+.herobox{
+    position: relative;
+
+}
 #hero{
+    width: 100%;
+    padding: 0;
     height: 400px;
     width: 1000px;
     image-rendering: auto;
