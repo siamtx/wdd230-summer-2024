@@ -54,8 +54,8 @@ img{
 #hero{
     width: 100%;
     padding: 0;
-    height: 400px;
-    width: 1000px;
+    height: 500px;
+    object-fit: cover;
     image-rendering: auto;
     border-color: var(--accent2-color);
 }
