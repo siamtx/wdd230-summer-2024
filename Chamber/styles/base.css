@@ -21,9 +21,12 @@ base.css
 *,*:before,*:after {
     box-sizing: border-box;
 }
+header{
+    background-color: #8cdedc;
+}
 body{
     display: grid;
-    background-color: var(--accent3-color);
+    background-color: #72705b;
     
 }
 
@@ -41,11 +44,42 @@ main{
 }
 
 footer{
-    text-align: center;
+    display: grid;
+    background-color: #8cdedc;
 }
+#left{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 10px;
+    grid-column: 1/2;
+}
+
+#middle{
+    text-align: center;
+    font-size: 15px;
+    grid-column: 2/3;
+}
+ #middle img{
+    height: 35px;
+    padding-left: 20px;
+ }
+
+#right {
+    padding: 50px;  
+    font-size: 15px;
+    grid-column: 3/4;
+}
+
+#right img{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: auto;
+}
+
 img{
     height: 45px;
 }
+
 
 .herobox{
     position: relative;
@@ -60,8 +94,10 @@ img{
     border-color: var(--accent2-color);
 }
 button{
+    width: 150px;
     border-radius: 1.5rem;
-    border-color: var(--accent2-color);
+    background-color: #48e5c2;
+    border-color: #72705b;
 }
 
 #opclk{
@@ -95,6 +131,7 @@ button{
 	cursor: pointer;
 	font-size: 2rem;
 }
+
 
 /* The side navigation menu */
 .sidenav {
