@@ -24,14 +24,25 @@ base.css
 header{
     background-color: #8cdedc;
 }
+header img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+
+}
 body{
-    display: grid;
     background-color: #72705b;
     
 }
 
-h1, h2, h3{
+h1{
     text-align: center;
+    font-family: Roboto, sans-serif;
+}
+h2{
     font-family: Roboto, sans-serif;
 }
 
@@ -41,6 +52,42 @@ p{
 
 main{
     text-align: center;
+}
+
+#popciscles{
+    display: grid;
+}
+h3{
+    font-family: Roboto, sans-serif;
+    padding-left: 15px;
+}
+.card1{    
+    border: 4px solid black;
+    border-radius: 15px;
+    grid-column: 1/2;
+    margin: 50px;
+}
+
+.card2{    
+    border: 4px solid black;
+    border-radius: 15px;
+    grid-column: 2/3;
+    margin: 50px;
+}
+
+.card3{    
+    border: 4px solid black;
+    border-radius: 15px;
+    grid-column: 3/4;
+    margin: 50px;
+}
+.weather{
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 10px;
+    border: 5px solid black;
+    border-radius: 15px;
+    grid-column: 3/4;
 }
 
 footer{
@@ -65,50 +112,80 @@ footer{
  }
 
 #right {
-    padding: 50px;  
     font-size: 15px;
     grid-column: 3/4;
+    padding: 10px;
 }
 
 #right img{
+    height: 45px;
     border: 2px solid black;
     border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-img{
+#stripes{
     height: 45px;
+    padding-top: 8px;
+}
+.hero {
+    position: relative;
+}
+ 
+.hero img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+ 
+.hero article {
+    position: absolute;
+    padding: 1rem;
+    margin: 1.5rem;
+    top: 0.25rem;
+    left: 0.25rem;
+    right: 0.25rem;
+    background-color: rgb(255, 255, 255, 0.7);
 }
 
-
+/*
 .herobox{
     position: relative;
 
 }
-#hero{
+.hero{
     width: 100%;
     padding: 0;
     height: 500px;
     object-fit: cover;
     image-rendering: auto;
     border-color: var(--accent2-color);
-}
+} */
+
 button{
-    width: 150px;
+    width: 100px;
     border-radius: 1.5rem;
     background-color: #48e5c2;
     border-color: #72705b;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
 }
 
 #opclk{
-    text-align: left;
-    font-size: 25px;
+    text-align: center;
+    font-size: 20px;
     
 }
+
 #currents{
-    text-align: left;
+    box-sizing: border-box;
+    text-align: center;
     padding-left: 10px;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    border: 5px solid black;
+    border-radius: 15px;
+    grid-column: 1/3;
 }
 #spots{
     font-family: var(--paragraph-font);
@@ -183,5 +260,9 @@ button{
     .sidenav a {font-size: 18px;}
   }
 
+/* Adjustable Overlay */
 
+#medium, #large {
+    visibility: hidden;
+}
 

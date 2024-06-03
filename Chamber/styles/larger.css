@@ -14,4 +14,14 @@
     h2 {
         grid-column: 1/span;
     }
+    /* Adjustable Overlay */
+
+#large {
+    visibility: visible;
 }
+
+#small, #medium {
+    visibility: hidden;
+}
+}
+

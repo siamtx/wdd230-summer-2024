@@ -15,48 +15,99 @@
 </head>
 
 <body>
-  <div id="mode" >
-    🌙
-  </div>
-    <header >
-        <h1>Gwinnett County Chamber of Commerce</h1>
+     <header>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="discovery.html">Discover Business</a>
+        <a href="directory.html">Business Members</a>
+        <a href="join.html">Become a Member</a>
+      </div>      
+      <!-- Use any element to open the sidenav -->
+      <button>
+        <span id="opclk" onclick="openNav()">MENU</span>
+      </button>                  
+    
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <img src="images/logo.webp" alt="Gwinnett County Seal">
+     <!--  <h1>Gwinnett County Chamber of Commerce</h1> --> 
+        <div id="mode" >
+          🌙
+        </div>
+
     </header>
     <main>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="discovery.html">Discover Business</a>
-            <a href="directory.html">Business Members</a>
-            <a href="join.html">Become a Member</a>
-          </div>
-          
-          <!-- Use any element to open the sidenav -->
-          <button>
-            <span id="opclk" onclick="openNav()">MENU</span>
-          </button>                  
-        
-          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-          <div id="main">
-            <img src="images/multiple-pics.webp" alt="scrolling pictures">
-          </div> 
-          <div class="herobox">
-            <img id="hero" src="images/heroATLbizj.webp" alt="Futuristic Gwinnett">  
+
+      <div class="hero">
+        <picture>
+          <source srcset="images/wdd230-orgSML.webp" media="(max-width: 500px)">
+          <source srcset="images/wdd230-orgburger.webp" media="(max-width: 1000px)">
+          <img src="images/wdd230-orgMED.webp" alt="Business pic" width="1500" height="750">
+         </picture>
+         <article>
+            <h2 id="small">Small</h2>
+            <h2 id="medium">Medium</h2>
+            <h2 id="large">Large</h2>
+         </article>
+      </div>
+        <!--    <img id="hero" src="images/heroATLbizj.webp" alt="Futuristic Gwinnett">  -->
             <h2 id="cta">Welcome to the Home of Business Innovation</h2>
-          </div> 
+        <section id="popciscles">
           <div id="currents">
-          <h3>Current Events</h3>
+            <h3>Current Events</h3> 
+              <div id="main">
+                <img src="images/multiple-pics.webp" alt="scrolling pictures">
+              </div> 
+          </div>        
+          <div class="weather">
+            <h3>Weather</h3>
+              <ul>
+                  <li><span id=temp></span></li>
+                  <li><span id=wSpeed></span></li>
+                  <li><span id=windchill></span></li>
+              </ul>
+          </div>
+          <div id="spots" >
+            <h3>Company Spotlights</h3>
+          </div>
+      
+          <div class="card1">        
+            <article>
+              <h2>Cheers and Company</h2>
+              <picture>                
+                <source srcset="images/wdd230-orgSML.webp" media="(max-width: 200px)">
+              <!--  <source srcset="images/wdd230-orgburger.webp" media="(max-width: 350px)">
+                <img src="images/cheersco.webp" alt="Business pic" width="700" height="525">
+              -->
+              </picture>
+            </article>      
+        </div> 
+        <div class="card2">          
+            <article>
+              <h2>Tostem Smart Snacks</h2>
+              <picture>                
+                <source srcset="images/toastem-small.webp" media="(max-width: 200px)">
+              <!--   <source srcset="images/toastem-medium.webp" media="(max-width: 350px)">
+                <img src="images/toastem-large.webp" alt="Business pic" width="700" height="525">
+              -->
+              </picture>
+            </article>
         </div>
-        <div id="spots" >
-          <h3>Company Spotlights</h3>
-          <p>Cheers and Company</p>
-          <p>Tostem Smart Snacks</p>
-          <p>Barco Display Solutions</p>
-        </div>
+        <div class="card3">        
+            <article>
+              <h2>Barco Display Solutions</h2>
+              <picture>                
+                <source srcset="images/wdd230-orgSML.webp" media="(max-width: 200px)">
+               <!--  <source srcset="images/wdd230-orgburger.webp" media="(max-width: 350px)">
+                <img src="images/wdd230-orgMED.webp" alt="Business pic" width="700" height="525">
+              -->
+              </picture>
+            </article>
+        </div> 
+      </section>
+          
         
-        <div>
-          <h3>Weather</h3>
-          <img src="images/weather-point.webp" alt="Weather">
-        </div>
+
     </main>
       <footer>
         <div id="left">
@@ -73,10 +124,12 @@
           <a href="https://www.facebook.com" target="_blank"> <img src="images/fb4.webp" alt="facebook icon"></a>
           <a href="https://www.twitter.com" target="_blank"> <img src="images/xicon.webp" alt="X icon"></a>
           <a href="https://www.instagram.com" target="_blank"> <img src="images/instagram.webp" alt="instagram icon"></a>
+        
         </div>
       </footer>
     <script src="scripts/side-nav.js"></script>
     <script src="scripts/mode.js"></script>
     <script src="scripts/getdates.js" ></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
