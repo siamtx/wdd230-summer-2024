@@ -32,6 +32,7 @@ h1{
     font-size: 45px;
     display: flex;
     align-items: center;
+    font-family: Poppins;
 }
 
 ul{
@@ -50,6 +51,7 @@ nav{
     font-size: 25px;
     flex-direction: column;
     align-items: center;
+    font-family: Poppins;
 }
 
 nav ul{
@@ -78,6 +80,7 @@ h2{
 
 li{
     color: black;
+    font-family: Poppins;
 }
 
 main{
@@ -114,6 +117,7 @@ h3{
 
 .news{
     text-align: center;
+    font-family: Poppins;
 }
 iframe{
     height: 125px;
@@ -121,7 +125,8 @@ iframe{
 }
 
 footer{
-    background-color: #48e5c2
+    background-color: #48e5c2;
+    font-family: Poppins;
 }
 
 .class{
@@ -155,6 +160,7 @@ footer{
     position: absolute;
     top: 3rem;
     right: 3rem;
+    font-family: Poppins;
 }
  
 #menu::before {
