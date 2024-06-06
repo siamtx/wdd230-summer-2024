@@ -108,7 +108,7 @@ h3{
 }
 
 .news{
-    text-align: center;;
+    text-align: center;
 }
 iframe{
     height: 150px;
@@ -190,10 +190,22 @@ footer{
 /* wayfinding symbol for the user */
 .navigation .active {
     text-decoration: underline;
-    text-decoration-color: var(--primary-color));
+    text-decoration-color: var(--primary-color);
     text-decoration-thickness: 1.5px;
 }
 
 .a:visited{
     color: green;
+}
+
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
 }
