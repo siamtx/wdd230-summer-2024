@@ -36,12 +36,12 @@ h1{
 }
 
 ul{
-    list-style-type: none;
+   list-style-type: none;
 }
 
 nav{  
     display: flex;
-    list-style-type: none;
+   /* list-style-type: none;*/
     grid-column: 2/3;
     text-align: center;
     grid-row: 2/3;
@@ -55,7 +55,7 @@ nav{
 }
 
 nav ul{
-    list-style-type: none;
+    /*list-style-type: none;*/
     display: flex;
     flex-direction: column;
 }
@@ -178,10 +178,11 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
+
 }
  
 .navigation ul {
-    list-style: none;
+   /* list-style: none; */
 }
  
 .navigation a {
