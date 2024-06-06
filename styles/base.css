@@ -6,6 +6,7 @@
 
 body{
     align-items: center;
+    margin: 0;
 }
 
 header{
@@ -13,20 +14,20 @@ header{
     justify-content: space-evenly;
     background-color: #2191fb;
     unicode-bidi: isolate;
-    /*grid-column: 2/3;
-    grid-row: 1/2;*/
 }
 
 #pic{
     height: 350px;
-    padding-left: 75px;
-    padding-top: 75px;
+    margin: 2rem;
     border-radius: 25px;
+    
 }
 
 h1{
     text-align: center;
     font-size: 45px;
+    display: flex;
+    align-items: center;
 }
 
 ul{
@@ -90,7 +91,7 @@ main{
     object-fit: cover;
 }
 
-.label {
+.label-hero {
     position: absolute;
     padding: 1rem;
     margin: 1.5rem;
@@ -133,9 +134,13 @@ footer{
     height: 45px;
     border: 3px;
 }
+#copy {
+    padding: 1rem;
+}
 
 #mod{
     padding-bottom: 1.5em;
+    margin: 1.5rem 0 0 0;
 }
 /* Hamburger Menu */
 #menu {
@@ -144,8 +149,8 @@ footer{
     background: none;
     color: var(--primary-color);
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 3rem;
+    right: 3rem;
 }
  
 #menu::before {
