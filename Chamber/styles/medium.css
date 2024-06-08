@@ -16,14 +16,48 @@
     z-index: 1;
     top: 35px;
     left: 5px;
+    background-color: #2191fb;
+    overflow-x: hidden;
+    padding-top: 10px;
+    color:  black;
+    font-family: Poppins;
 
 }
 
 .mediaventure{
-    display: flexbox;
+    margin-left: 150px;
+    flex: 100%;
     flex-direction: column;
+    padding: 5px;
+    border: 5px solid black;
+}
 
+#demo{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: #72705b;
+}
 
+#stats{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: #72705b;
+}
+#evt {
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: #72705b;
+}
+
+#attrct {
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: #72705b;
+}
+
+img {
+    border: 3px solid black;
+    border-radius: 35px;
 }
 
 }
