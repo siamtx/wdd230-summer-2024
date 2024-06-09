@@ -11,27 +11,31 @@
 }
 .column{
     height: 100%;
-    width: 250px;
-    position: fixed;
+    width: 300px;
+    position: left;
     z-index: 1;
-    top: 35px;
-    left: 5px;
+    top: 0;
+    left: 0;
     background-color: #2191fb;
     overflow-x: hidden;
-    padding-top: 10px;
+    padding-top: 20px;
     color:  black;
     font-family: Poppins;
+    
 
 }
 
 .mediaventure{
     display: grid;
-    margin-left: 150px;
-    flex: 100%;
+    margin-left: 160px;
+    padding: 0 10px;
+    display: inline-flex;
     flex-direction: column;
-    padding: 5px;
-    /*border: 5px solid black;*/
-    grid-column: 1/2;
+    font: 1em sans-serif;
+    z-index: 2;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row: 1/3; */
+
 
 }
 
@@ -58,9 +62,14 @@
     background-color: #72705b;
 }
 
-img {
-    border: 3px solid black;
-    border-radius: 35px;
+picture {
+    padding: 1rem;
+    object-position: center;
+
 }
+ picture img {
+    border: 4px solid black;
+    border-radius: 1rem;
+ }
 
 }
