@@ -7,12 +7,18 @@
     to change any font or color cimply update the root and all pages will update.
    
     How to use ex. eolor: var(--primary-color);*/
-:root {
+@font-face {
+        font-family: Poppins;
+        src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
+    :root {
     --primary-color: #2191fb;
     --secondary-color:#72705b;
     --accent1-color: #48e5c2;
     --accent2-color: #03191e;
     --accent3-color: #8cdedc;
+    --accent4-color: whitesmoake;
  
     --heading-font: "roboto", sans-serif;
     --paragraph-font: "source sans 3", sans-serif;
@@ -48,7 +54,7 @@ header{
 }
 
 body{
-    background-color: #72705b;
+    background-color: whitesmoke;
     
 }
 
@@ -168,20 +174,6 @@ footer{
     background-color: rgb(255, 255, 255, 0.7);
 }
 
-/*
-.herobox{
-    position: relative;
-
-}
-.hero{
-    width: 100%;
-    padding: 0;
-    height: 500px;
-    object-fit: cover;
-    image-rendering: auto;
-    border-color: var(--accent2-color);
-} */
-
 header button{
     width: 100px;
     border-radius: 1.5rem;
@@ -285,3 +277,84 @@ header button{
     visibility: hidden;
 }
 
+/* Join Page CSS*/
+h2 {
+    margin-left: 1rem;
+    text-align: left;
+}
+
+
+#membership div{
+    text-align: left;
+    border: 0.25rem solid var(--accent2-color);
+    border-radius: 1rem;
+    padding: 1 rem;
+    margin: 1rem
+    
+}
+ 
+#membership div h3, #membership div p {
+    margin: 0.25rem;
+    text-align: left;
+}
+ 
+#register fieldset {
+    margin: 1rem;
+    border: 2px dashed var(--accent2-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+#choose {
+    display: flex;
+    flex-direction: row;
+
+}
+#choose :hover {
+    border: 3px solid #03191e;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+textarea {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    border: 0.125rem solid var(--accent2-color);
+}
+#register legend {    
+    color: var(--accent2-color);
+    padding: 0.5rem;
+    font-family: var(--heading-font);
+}
+ 
+#register label{
+    text-align: left;
+    display: block;
+    padding: 1rem;
+    color: var(--accent2-color);
+    font-size: .9rem;
+    font-family: var(--paragraph-font);
+}
+ 
+#register input[type="text"],
+#register input[type="email"],
+#register input[type="tel"]{
+    background-color: var(--accent3-color);
+    display: block;
+    border-radius: 6px;
+    padding: .5rem;
+    color: var(--accent3-color);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+ 
+register input[type="submit"]{
+    background-color: #2191fb;
+    border: 3px solid black;
+    width: 50%;
+}
+ 
+#register input[type="test"]{
+ 
+}
