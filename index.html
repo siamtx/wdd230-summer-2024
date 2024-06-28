@@ -83,14 +83,15 @@
                 -->
             </ul>
         </section>
-        <section class="news">
-            <h3>Information</h3>            
+        <section class="card">
+            <h3>Information</h3>
             <ul>
                 <li><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d47174.78799161286!2d-71.06138553843452!3d42.35479707135564!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715792727395!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
-                <li><span class="label">Number of Visits: </span><span class="visits"></span></li>
-                <li><span id=temp></span></li>
+                <li id="lOne"><img id="weather-icon" src="#" alt="#">|<span id=temp></span>|<span id=desc></span></li>
                 <li><span id=wSpeed></span></li>
                 <li><span id=windchill></span></li>
+                <br>
+                <li><span class="label">Number of Visits: </span><span class="visits"></span></li>
             </ul>
         </section>
     </main>
@@ -103,7 +104,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/lastvisited.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/links.js"></script>
 </body>
 </html>

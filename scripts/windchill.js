@@ -1,5 +1,5 @@
-const temp= 51
-const wSpeed= 4
+// const temp= 51
+// const wSpeed= 4
 const nullstr= "Not Applicable";
 var windchill= (35.74 + (0.6215 * temp))-(35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
  
