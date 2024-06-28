@@ -277,6 +277,16 @@ header button{
     visibility: hidden;
 }
 
+.mediaventure img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.25rem ;
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
 /* Join Page CSS*/
 h2 {
     margin-left: 1rem;
@@ -308,7 +318,6 @@ h2 {
 #choose {
     display: flex;
     flex-direction: row;
-
 }
 #choose :hover {
     border: 3px solid #03191e;
@@ -349,10 +358,18 @@ textarea {
     appearance: none;
 }
  
-register input[type="submit"]{
+#register input[type="submit"]{
+    border: none;
     background-color: #2191fb;
-    border: 3px solid black;
+    color: black; 
+    font-family: var(--heading-font);
+    border-radius: 6px;
+    padding: 0.8rem;
     width: 50%;
+    max-width: 50%;
+    margin: 1rem auto 2rem 3rem;
+    box-shadow: 1px 1px 4px #72705b;
+
 }
  
 #register input[type="test"]{

@@ -9,10 +9,20 @@
 #small, #large {
     visibility: hidden;
 }
-.column{
+
+#discover{
+    margin-left: 300px;
+}
+
+.column > div {
+    margin: 1rem; 
+}
+
+
+.column {
     height: 100%;
     width: 300px;
-    position: left;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
@@ -21,23 +31,9 @@
     padding-top: 20px;
     color:  black;
     font-family: Poppins;
-    
-
 }
 
-.mediaventure{
-    display: grid;
-    margin-left: 160px;
-    padding: 0 10px;
-    display: inline-flex;
-    flex-direction: column;
-    font: 1em sans-serif;
-    z-index: 2;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-row: 1/3; */
 
-
-}
 
 #demo{
     border: 3px solid black;
@@ -71,5 +67,12 @@ picture {
     border: 4px solid black;
     border-radius: 1rem;
  }
+/*    Join Page    */
+.jpage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
 
 }
