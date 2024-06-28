@@ -5,7 +5,7 @@ const linksURL = "https://siamtx.github.io/wdd230/data/links.json";
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    //console.log(data);
+    console.log(data);
     let dataList = data['lessons'];
     dataList.forEach(displayLinks);
 }
