@@ -13,8 +13,15 @@
     --paragraph-font: 'Nunito';
 }
 
+header {
+    background-color: var(--accent-color1);
+}
 h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
+}
+
+body {
+    background-color: var(--accent-color2);
 }
 
 
