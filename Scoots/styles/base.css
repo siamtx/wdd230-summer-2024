@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url(https://coolors.co/987284-59c9a5-009ddc-fff275-f07167);
+
+:root {
+    --primary-color: #FFF275;
+    --secondary-color: #59C9A5;
+    --accent-color1: #009DDC;
+    --accent-color2: #F07167;
+    --accent-color3: #987284;
+
+    --heading-font: 'Nunito', sans-serif ;
+    --paragraph-font: 'Nunito';
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+
+#stripes {
+    height: 45px;
+    padding-top: 8px;
+}
+
+#social img {
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 10px;    
+    margin-left: auto;
+    margin-right: auto;
+}
