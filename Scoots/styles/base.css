@@ -28,6 +28,11 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+#hero {
+    image-rendering: auto;
+
+}
+
 #dio, #metro, #pcx, #pio {
     width: 400px;
     height: 300px;
