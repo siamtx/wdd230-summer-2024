@@ -231,6 +231,9 @@ footer{
     padding-top: 8px;
 }
 
+ol {
+    text-decoration: none;
+}
 
 /**
 #social img {
